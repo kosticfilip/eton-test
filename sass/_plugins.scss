@@ -1,0 +1,294 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'vabble';
+  src:  url('#{$icon-font-path}vabble.eot?nl7425');
+  src:  url('#{$icon-font-path}vabble.eot?nl7425#iefix') format('embedded-opentype'),
+    url('#{$icon-font-path}vabble.ttf?nl7425') format('truetype'),
+    url('#{$icon-font-path}vabble.woff?nl7425') format('woff'),
+    url('#{$icon-font-path}vabble.svg?nl7425#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'vabble' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-dots:before {
+  content: "\e919";
+}
+.icon-right:before {
+  content: "\e918";
+}
+.icon-video:before {
+  content: "\e916";
+}
+.icon-share:before {
+  content: "\e917";
+}
+.icon-bottom:before {
+  content: "\e900";
+}
+.icon-calendar:before {
+  content: "\e901";
+}
+.icon-check:before {
+  content: "\e902";
+}
+.icon-clock:before {
+  content: "\e903";
+}
+.icon-comment:before {
+  content: "\e904";
+}
+.icon-envelope:before {
+  content: "\e905";
+}
+.icon-exit:before {
+  content: "\e906";
+}
+.icon-film:before {
+  content: "\e907";
+}
+.icon-football:before {
+  content: "\e908";
+}
+.icon-game:before {
+  content: "\e909";
+}
+.icon-globe:before {
+  content: "\e90a";
+}
+.icon-group:before {
+  content: "\e90b";
+}
+.icon-heart:before {
+  content: "\e90c";
+}
+.icon-left:before {
+  content: "\e90d";
+}
+.icon-like:before {
+  content: "\e90e";
+}
+.icon-music:before {
+  content: "\e90f";
+}
+.icon-notification:before {
+  content: "\e910";
+}
+.icon-pencil:before {
+  content: "\e911";
+}
+.icon-pin:before {
+  content: "\e912";
+}
+.icon-search:before {
+  content: "\e913";
+}
+.icon-settings:before {
+  content: "\e914";
+}
+.icon-user:before {
+  content: "\e915";
+}
+
+/* Slick Slider */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: block;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+// Slick Vabble Theme
+
+.slick-arrow{
+  border: none;
+  background: none;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  top: -38px;
+  width: 20px;
+  height: 20px;
+  font-size: 21px;
+  font-family: 'vabble' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  outline: none;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-arrow:hover{
+  color: $brand-primary
+}
+
+.slick-prev{
+  right: 31px;
+}
+.slick-prev::before{
+  content: "\e90d";
+  position: relative;
+  left: -4px;
+
+}
+.slick-next{
+  right: 6px;
+}
+.slick-next::before{
+  content: "\e918";
+  position: relative;
+  left: -4px;
+}
+
+ul.slick-dots{
+  padding: 0;
+  margin:0 auto;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slick-dots li{
+  list-style: none;
+  float: left;
+  padding: 1px;
+}
+.slick-dots button{
+  border: none;
+  outline: none;
+  /* text-indent: 1000px; */
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: lighten($gray-light, 12%);
+  width: 4px;
+  padding: 0;
+  height: 4px;
+}
+.slick-dots button:hover{
+  background-color: $brand-primary
+}
+.slick-dots li[aria-hidden="false"] button {
+  background-color: darken($gray-light, 10%)
+}
